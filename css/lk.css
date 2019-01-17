@@ -1,0 +1,65 @@
+html{
+    background-color: rgb(182, 205, 211);
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+form{
+    margin: auto;
+}
+.changeF input[type="checkbox"],.changeF input[type="radio"],.changeF .men,.changeF .woomen,.changeF input[type="submit"]{
+    display: none;
+}
+.changeF > input,.changeF label,.changeF select{
+    display: block;
+    background-color: inherit;
+    padding: 15px 30px;
+    color: black;
+    border: 2px solid black;
+    width: 218px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.changeF select{
+    width: 282px !important;
+}
+.changeT > select, .changeT > label, .changeT > input{
+    display: block !important;
+}
+.changeT > input.inline,.changeT > label.inline{
+    display: inline-block !important;
+}
+.changeT > *:not(h1){
+    margin: 10px 0;
+}
+.changeT > div > input{
+    margin-left: 10px;
+}
+input::-webkit-input-placeholder {color:#000000; opacity:1;}/* webkit */
+input::-moz-placeholder          {color:#000000; opacity:1;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#000000; opacity:1;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#000000; opacity:1;}/* IE */
+.changeF select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+form{
+    position: relative;
+}
+.change{
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: -80px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    background: url(../svg/pencil-alt-solid.svg) no-repeat;
+    background-size: cover;
+    border: none;
+}
